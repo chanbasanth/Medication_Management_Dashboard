@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500&display=swap');
+
+body,
+.dashboard-container {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-patient,
+.btn-caretaker {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+.dashboard-container {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f0faff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.subtitle {
+  color: #444;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  transition: border 0.3s ease;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.patient-card:hover {
+  border-color: #2563eb;
+}
+
+.caretaker-card:hover {
+  border-color: #059669;
+}
+
+.icon {
+  font-size: 36px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.patient-icon {
+  color: #2563eb;
+  background-color: #e0edff;
+}
+
+.caretaker-icon {
+  color: #059669;
+  background-color: #d1fae5;
+}
+
+.card h2 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.patient-card h2 {
+  color: #2563eb;
+}
+
+.caretaker-card h2 {
+  color: #059669;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+}
+
+.card ul li {
+  margin: 8px 0;
+  position: relative;
+  padding-left: 16px;
+}
+
+.patient-card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+
+.caretaker-card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #059669;
+}
+
+.btn-caretaker,
+.btn-patient {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-patient {
+  background-color: #2563eb;
+}
+
+.btn-patient:hover {
+  background-color: #1e4fcc;
+}
+
+.btn-caretaker {
+  background-color: #059669;
+}
+
+.btn-caretaker:hover {
+  background-color: #047857;
+}
+
+.love-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.love-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to right, #3b82f6, #10b981);
+  border-radius: 20%;
+  padding: 12px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .card-wrapper {
+    gap: 30px;
+  }
+
+  .card {
+    padding: 24px;
+    max-width: 300px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 30px 16px;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card ul,
+  .card p {
+    font-size: 13px;
+  }
+
+  .btn-patient,
+  .btn-caretaker {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 20px 12px;
+  }
+
+  .card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .btn-patient,
+  .btn-caretaker {
+    font-size: 12px;
+  }
+}

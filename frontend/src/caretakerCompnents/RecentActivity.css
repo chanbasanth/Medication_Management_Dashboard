@@ -1,0 +1,126 @@
+.recent-activity {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recent-activity h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+  text-align: center;
+}
+
+.recent-activity ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.activity-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.status-icon {
+  font-size: 20px;
+}
+
+.activity-info strong {
+  display: block;
+  color: #333;
+  font-size: 15px;
+}
+
+.time-text {
+  font-size: 13px;
+  color: #666;
+}
+
+.activity-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.photo-btn {
+  font-size: 13px;
+  padding: 5px 8px;
+  background: #f5f8ff;
+  border: 1px solid #c2dbfe;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.completed-badge {
+  background-color: #eef8f1;
+  color: #228b22;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid #b5e0b9;
+}
+
+.missed-badge {
+  background-color: #fcecec;
+  color: #d9534f;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid #f1b0b7;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .activity-right {
+    flex-direction: row;
+    margin-top: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .recent-activity h2 {
+    font-size: 18px;
+  }
+
+  .photo-btn,
+  .completed-badge,
+  .missed-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+@media (max-width: 425px) {
+  .patient-dashboard {
+    background: #ea5d0b;
+    
+}
+}

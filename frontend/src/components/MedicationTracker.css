@@ -1,0 +1,192 @@
+.tracker-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.upload-status {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #fefefe;
+}
+
+.image-preview img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.medication-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  min-width: 280px;
+}
+
+.medication-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.medication-item {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.medication-item.success {
+  background-color: #e6f9eb;
+  border-color: #a6e4b7;
+}
+
+.medication-step {
+  background-color: #e0e7ff;
+  color: #1e40af;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.medication-details {
+  flex: 1;
+}
+
+.medication-label {
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+.medication-desc {
+  font-size: 13px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+.medication-time {
+  font-size: 14px;
+  color: #444;
+  margin-left: auto;
+}
+
+.proof-photo-card {
+  border: 1px dashed #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #fefefe;
+}
+
+.proof-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.photo-btn {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.photo-btn:hover {
+  background-color: #eaeaea;
+}
+
+.mark-btn {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mark-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.mark-btn:hover:not(.disabled) {
+  background-color: #218838;
+}
+
+.success-box {
+  background-color: #e6f9eb;
+  border: 1px solid #a6e4b7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.check-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+/* .photo-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+} */
+
+.photo-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.image-preview img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .tracker-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 30px;
+  }
+
+  .medication-section {
+    width: 100%;
+    max-width: 500px;
+  }
+}

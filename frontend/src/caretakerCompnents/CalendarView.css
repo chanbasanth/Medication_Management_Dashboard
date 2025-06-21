@@ -1,0 +1,45 @@
+.calendar-view-container {
+  display: flex;
+  gap: 20px;
+  background: #f6fcfa;
+  padding: 20px;
+  border-radius: 10px;
+  flex-wrap: wrap; /* Allows stacking */
+}
+
+.calendar-overview-box,
+.calendar-detail-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.calendar-detail-alert {
+  background: #eef6ff;
+  border: 1px solid #cce0ff;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.calendar-detail-alert p {
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+/* ✅ Responsive Behavior */
+@media (max-width: 768px) {
+  .calendar-view-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .calendar-overview-box,
+  .calendar-detail-box {
+    width: 100%;
+  }
+}

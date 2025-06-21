@@ -1,0 +1,153 @@
+/* Base Layout */
+.overview-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Reusable Box Style */
+.blur-on-overview {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Section Headings */
+.status-box h2,
+.quick-actions h2,
+.progress h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Status Card */
+.status-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.medication-text {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.time-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.status-pill {
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 999px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-pill.pending {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.status-pill.taken {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Quick Actions */
+.quick-actions button {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quick-actions button:hover {
+  background-color: #f0f0f0;
+}
+
+.quick-actions button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Progress Section */
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .filled {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.6s ease-in-out;
+}
+
+.progress-texts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.taken {
+  color: green;
+}
+
+.missed {
+  color: red;
+}
+
+.remaining {
+  color: blue;
+}
+
+.percentage {
+  font-weight: bold;
+}
+
+/* Responsive Media Query */
+@media (max-width: 600px) {
+  .status-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .progress-texts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quick-actions button {
+    font-size: 14px;
+  }
+}
