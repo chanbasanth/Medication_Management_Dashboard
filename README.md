@@ -22,4 +22,53 @@ Open a second terminal.
 Navigate to the frontend folder:
 cd frontend
 npm install
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=http://lo:
+
+** Features **
+=> Authentication
+User Sign Up / Login using email and password
+
+Secure authentication with backend validation
+
+Error handling for invalid credentials
+
+=> Medication Management
+Add, update, and delete medications
+
+Schedule medications with timing and frequency
+
+Mark medications as "Taken" or "Missed"
+
+=> Calendar View
+Visual representation of medication history
+
+Highlights taken/missed status by date
+
+Easily track daily medication performance
+
+=> Notifications (Optional or Planned)
+In-app reminders for upcoming medications
+
+Email notifications (can be added in the future)
+
+=> Proof Upload (Optional / Planned)
+Upload images as proof of taking medication
+
+=> Responsive UI
+Clean and intuitive user interface using React and Tailwind CSS
+
+Fully responsive for mobile and desktop
+
+=> Backend API (Node.js + Express + SQLite3)
+RESTful API endpoints for users and medications
+
+Connected to a lightweight SQLite database
+
+Hosted on Render (or another cloud platform)
+
+☁=> Deployed
+Frontend on Vercel: [ https://medication-management-dashboard-bkp.vercel.app]
+
+Backend on Render: [https://vercel.com/chanbasanths-projects/medication-management-dashboard-fd7m]
+
+
