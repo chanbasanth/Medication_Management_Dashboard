@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/auth';
+const API_URL = 'https://medication-management-dashboard-1.onrender.com/api/auth';
+
 
 export const signupUser = async (userData) => {
   return await axios.post(`${API_URL}/signup`, userData);
